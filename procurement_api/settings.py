@@ -25,10 +25,8 @@ environ.Env.read_env('.env.dev')
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-1*er94kwly1h7)dl-$f-_m&5km9##h#q^5%(r2!_y*7(k=sa45'
-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env('DEBUG')
-
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1'
@@ -146,7 +144,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = 'static/'
-
 MEDIA_URL = '/quotes/'
 MEDIA_ROOT = os.path.join(BASE_DIR, "quotes/")
 
@@ -154,7 +151,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "quotes/")
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = env('EMAIL_HOST')
 EMAIL_PORT = 587
