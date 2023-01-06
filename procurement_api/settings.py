@@ -105,11 +105,11 @@ WSGI_APPLICATION = 'procurement_api.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'procurement_db',
-        'USER': 'Itkenya_usr_sg',
-        'PASSWORD': 'QecqdGhyB48b8Sbb',
-        'HOST': 'trustgro-dev-db.postgres.database.azure.com',
-        'PORT': '5432',
+        'NAME': '',
+        'USER': '',
+        'PASSWORD': '',
+        'HOST': '',
+        'PORT': '',
     }
 }
 
